@@ -60,9 +60,9 @@ Through the **Sync** tab, students can:
 
 This process allows fine-grained, privacy-aware syncing of academic interaction data.
 
-| Login | Sync Main | Sync After Login |
+| Sync Main | Login | Sync After Login |
 |------|-----------|------------------|
-| ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
+| ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
 
 ---
 
