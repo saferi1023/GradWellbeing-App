@@ -46,7 +46,7 @@ The app collects self-reports and digital interaction data to help students and 
 Students can fill out and submit a **JD-R based questionnaire** consisting of **5 categories** (Perceived Stress, Peer Support, Supervision, Infrastructure, Intellectual Climate) with a **total of 26 Likert-scale questions**.  
 Upon completion, all responses are securely stored in **Firestore Cloud** for later analysis.
 
-![Questionnaire Tab](./assets/screenshots/app_questionnaire-page.png)
+![Questionnaire Tab](./assets/images/app_questionnaire-page.png)
 
 ---
 
@@ -62,7 +62,7 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 
 | Login | Sync Main | Sync After Login |
 |------|-----------|------------------|
-| ![Sync Login](./assets/screenshots/app_sync-page-3.png) | ![Sync Tab](./assets/screenshots/app_sync-page1.png) | ![Sync After Login](./assets/screenshots/app_sync-page2.png) |
+| ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
 
 ---
 
@@ -70,7 +70,7 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 Students can also report **additional documents** (e.g., schedules or transcript files) through the **Upload** tab.  
 Users select the file type, assign a date, and upload the document, which is then securely stored in Firestore for research analysis.
 
-![Upload Tab](./assets/screenshots/app_upload-page.png)
+![Upload Tab](./assets/images/app_upload-page.png)
 
 ---
 
