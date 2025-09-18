@@ -26,17 +26,6 @@ The app securely gathers self-reported JD-R questionnaire responses along with s
 
 ---
 
-## 📸 Screenshots
-| Welcome | Login | Questionnaire |
-|---------|------|----------------|
-| ![Welcome](./assets/images/20250306-app_welcome-page.png) | ![Login](./assets/images/app_login-page.png) | ![Questionnaire](./assets/images/app_questionnaire-page.png) |
-
-| Sign-Up (1) | Sign-Up (2) | Sync |
-|-------------|-------------|-----|
-| ![SignUp1](./assets/images/app_signup-page1.png) | ![SignUp2](./assets/images/app_signup-page2.png) | ![Sync](./assets/images/app_sync-page1.png) |
-
----
-
 
 ## 📱 Key App Tabs
 
@@ -44,7 +33,10 @@ The app securely gathers self-reported JD-R questionnaire responses along with s
 Students can fill out and submit a **JD-R based questionnaire** consisting of **5 categories** (Perceived Stress, Peer Support, Supervision, Infrastructure, Intellectual Climate) with a **total of 26 Likert-scale questions**.  
 Upon completion, all responses are securely stored in **Firestore Cloud** for later analysis.
 
-![Questionnaire Tab](./assets/images/app_questionnaire-page.png)
+
+<div align="center">
+  <img src="./assets/images/app_questionnaire-page.png" width="460" style="margin:5px"/>
+</div>
 
 ---
 
@@ -58,34 +50,11 @@ Through the **Sync** tab, students can:
 
 This process allows fine-grained, privacy-aware syncing of academic interaction data.
 
-| Sync Main | Login | Sync After Login |
-|------|-----------|------------------|
-| ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
-
 <div align="center">
   <img src="./assets/images/app_sync-page1.png" width="460" style="margin:5px"/>
   <img src="./assets/images/app_sync-page-3.png" width="460" style="margin:5px"/><br/>
   <img src="./assets/images/app_sync-page2.png" width="460" style="margin:5px"/>
 </div>
-
-<div align="center" style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
-  <figure>
-    <img src="./assets/images/app_sync-page1.png" width="250"/>
-    <figcaption><b>Sync Main</b></figcaption>
-  </figure>
-  <figure>
-    <img src="./assets/images/app_sync-page-3.png" width="250"/>
-    <figcaption><b>Login</b></figcaption>
-  </figure>
-  <figure>
-    <img src="./assets/images/app_sync-page2.png" width="250"/>
-    <figcaption><b>Sync After Login</b></figcaption>
-  </figure>
-</div>
-
-
-
-
 
 ---
 
@@ -93,7 +62,10 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 Students can also report **additional documents** (e.g., schedules or transcript files) through the **Upload** tab.  
 Users select the file type, assign a date, and upload the document, which is then securely stored in Firestore for research analysis.
 
-![Upload Tab](./assets/images/app_upload-page.png)
+<div align="center">
+  <img src="./assets/images/app_upload-page.png" width="460" style="margin:5px"/>
+</div>
+
 
 ---
 
