@@ -40,7 +40,7 @@ The app securely gathers self-reported JD-R questionnaire responses along with s
 
 ## 📱 Key App Tabs
 
-### 1️⃣ Questionnaire Tab
+### 1. Questionnaire Tab
 Students can fill out and submit a **JD-R based questionnaire** consisting of **5 categories** (Perceived Stress, Peer Support, Supervision, Infrastructure, Intellectual Climate) with a **total of 26 Likert-scale questions**.  
 Upon completion, all responses are securely stored in **Firestore Cloud** for later analysis.
 
@@ -48,7 +48,7 @@ Upon completion, all responses are securely stored in **Firestore Cloud** for la
 
 ---
 
-### 2️⃣ Sync Tab
+### 2. Sync Tab
 Through the **Sync** tab, students can:
 - Securely log in using their **institutional ID** via Microsoft authentication.
 - Retrieve and upload:
@@ -62,9 +62,15 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 |------|-----------|------------------|
 | ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
 
+<div align="center">
+  <img src="./assets/images/app_sync-page1.png" width="220" style="margin:10px"/>
+  <img src="./assets/images/app_sync-page-3.png" width="220" style="margin:10px"/>
+  <img src="./assets/images/app_sync-page2.png" width="220" style="margin:10px"/>
+</div>
+
 ---
 
-### 3️⃣ Upload Tab
+### 3. Upload Tab
 Students can also report **additional documents** (e.g., schedules or transcript files) through the **Upload** tab.  
 Users select the file type, assign a date, and upload the document, which is then securely stored in Firestore for research analysis.
 
