@@ -7,7 +7,7 @@ The app securely gathers self-reported JD-R questionnaire responses along with s
 
 ---
 
-## ✨ Key Features
+## Key Features
 - **Secure Authentication**  
   Email-based sign-in and institutional login (Microsoft / Azure) for protected data access.
 
@@ -27,7 +27,7 @@ The app securely gathers self-reported JD-R questionnaire responses along with s
 ---
 
 
-## 📱 Key App Tabs
+## Key App Tabs
 
 ### 1. Questionnaire Tab
 Students can fill out and submit a **JD-R based questionnaire** consisting of **5 categories** (Perceived Stress, Peer Support, Supervision, Infrastructure, Intellectual Climate) with a **total of 26 Likert-scale questions**.  
@@ -69,7 +69,7 @@ Users select the file type, assign a date, and upload the document, which is the
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Frontend**: [React Native](https://reactnative.dev/) with Expo Router, Tailwind styling
 - **Backend / Database**: Firebase Authentication & Firestore
 - **Integrations**: Microsoft Graph API (Teams chats, Outlook emails, calendar)
@@ -77,7 +77,7 @@ Users select the file type, assign a date, and upload the document, which is the
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 ### Prerequisites
 - Node.js & npm
 - Expo CLI
