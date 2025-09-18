@@ -1,7 +1,16 @@
+source 'https://github.com/expo/expo.git'
+source 'https://cdn.cocoapods.org/'
+
 require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
 require File.join(File.dirname(`node --print "require.resolve('react-native/package.json')"`), "scripts/react_native_pods")
 
 require 'json'
+
+
+
+install! 'cocoapods', :deterministic_uuids => false
+$RNFirebaseAsStaticFramework = true
+
 podfile_properties = JSON.parse(File.read(File.join(__dir__, 'Podfile.properties.json'))) rescue {}
 
 ENV['RCT_NEW_ARCH_ENABLED'] = podfile_properties['newArchEnabled'] == 'true' ? '1' : '0'
@@ -28,7 +37,7 @@ self.define_singleton_method(use_autolinking_method_symbol) do |*args|
   end
 end
 
-platform :ios, podfile_properties['ios.deploymentTarget'] || '13.4'
+platform :ios, podfile_properties['ios.deploymentTarget'] || '16.0'
 install! 'cocoapods',
   :deterministic_uuids => false
 
@@ -38,8 +47,8 @@ target 'sora' do
   use_expo_modules!
   config = use_native_modules!
 
-  use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
-  use_frameworks! :linkage => ENV['USE_FRAMEWORKS'].to_sym if ENV['USE_FRAMEWORKS']
+  # use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
+  # use_frameworks! :linkage => ENV['USE_FRAMEWORKS'].to_sym if ENV['USE_FRAMEWORKS']
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -49,6 +58,10 @@ target 'sora' do
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
 
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+
   post_install do |installer|
     react_native_post_install(
       installer,
@@ -56,6 +69,33 @@ target 'sora' do
       :mac_catalyst_enabled => false,
       :ccache_enabled => podfile_properties['apple.ccacheEnabled'] == 'true',
     )
+
+    # Force modular headers for problematic pods
+    installer.pods_project.targets.each do |target|
+      if ['GoogleUtilities', 'FirebaseCoreInternal'].include?(target.name)
+        target.build_configurations.each do |config|
+          config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+          config.build_settings['DEFINES_MODULE'] = 'YES'
+        end
+      end
+    end
+
+    installer.pods_project.targets.each do |target|
+      if target.name == 'ReactCommon'
+        target.build_configurations.each do |config|
+          config.build_settings['DEFINES_MODULE'] = 'YES'
+          config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        end
+      end
+    end
+
+    installer.pods_project.targets.each do |target|
+      if target.name == 'sora'
+        target.build_configurations.each do |config|
+          config.build_settings['OTHER_LDFLAGS'] ||= ['$(inherited)', '-framework', 'CoreAudioTypes']
+        end
+      end
+    end
 
     # This is necessary for Xcode 14, because it signs resource bundles by default
     # when building for devices.
@@ -67,6 +107,12 @@ target 'sora' do
         end
       end
     end
+
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
+      end
+    end
   end
 
   post_integrate do |installer|
@@ -75,5 +121,12 @@ target 'sora' do
     rescue => e
       Pod::UI.warn e
     end
+    begin
+      expo_patch_react_imports!(installer)
+    rescue => e
+      Pod::UI.warn e
+    end
   end
+  # pod 'TSBackgroundFetch', :git => 'https://github.com/transistorsoft/transistor-background-fetch.git', :branch => 'master'
 end
+

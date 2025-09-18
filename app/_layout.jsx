@@ -4,12 +4,12 @@ import "react-native-url-polyfill/auto";
 import { SplashScreen, Stack } from "expo-router";
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 import GlobalProvider from "../context/GlobalProvider";
-
+// import 'tailwindcss/tailwind.css';
 
 
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApps } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getAuth, initializeAuth, getReactNativePersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -39,7 +39,7 @@ if (getApps().length === 0) {
 
 // Initialize Firebase
 export const FIREBASE_APP = app;
-export const FIREBASE_ANALYTICS = getAnalytics(FIREBASE_APP);
+// export const FIREBASE_ANALYTICS = getAnalytics(FIREBASE_APP);
 export const FIREBASE_AUTH = initializeAuth(FIREBASE_APP, {persistence: getReactNativePersistence(AsyncStorage)});
 export const FIREBASE_DB = getFirestore(FIREBASE_APP);
 

@@ -19,7 +19,7 @@
     <key>CFBundlePackageType</key>
     <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0.0</string>
+    <string>1.0.6</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleURLTypes</key>
@@ -31,9 +31,15 @@
           <string>com.jsm.sora</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>exp+sora</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>6</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSAppTransportSecurity</key>
@@ -44,20 +50,19 @@
       <true/>
     </dict>
     <key>NSHealthShareUsageDescription</key>
-    <string>We need access to your health data to show screen time and sleep time.</string>
+    <string>This app reads health data to provide personalized feedback based on your activity.</string>
     <key>NSHealthUpdateUsageDescription</key>
-    <string>We need access to your health data to show screen time and sleep time.</string>
+    <string>This app writes activity and wellness-related data to your Health app.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>Allow $(PRODUCT_NAME) to use your location for tracking your movements for research purposes.</string>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>This app needs access to location when in the background for tracking significant movements.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to location when open for tracking your movements.</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Allow $(PRODUCT_NAME) to access your microphone</string>
+    <key>NSMotionUsageDescription</key>
+    <string>This app uses motion data to monitor user activity for wellness insights.</string>
     <key>NSUserActivityTypes</key>
     <array>
-      <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
       <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
     </array>
     <key>UIBackgroundModes</key>
