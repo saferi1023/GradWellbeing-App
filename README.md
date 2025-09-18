@@ -2,9 +2,6 @@
 # GradWellbeing – App  
 > **Well-being of Graduate Students with AI-Based Monitoring**
 
-GradWellbeing is a mobile app designed to monitor and support the well-being of graduate students using the **Job Demands–Resources (JD-R) model** and AI-driven analysis.  
-The app collects self-reports and digital interaction data to help students and their advisors track stress levels, resources, and overall well-being.
-
 GradWellbeing is a mobile application designed as a data-collection tool to study graduate student well-being.
 The app securely gathers self-reported JD-R questionnaire responses along with selected occupational digital interaction data (chat, email, calendar). These datasets power our [**JDR-LLM**](https://github.com/saferi1023/JDR-LLM) research, where we apply large-language-model analysis to simulate JD-R scores and investigate graduate student well-being patterns.
 
