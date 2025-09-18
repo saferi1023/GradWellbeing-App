@@ -1,9 +1,12 @@
 
-# GradWellbeing – Aora App  
+# GradWellbeing – App  
 > **Well-being of Graduate Students with AI-Based Monitoring**
 
-GradWellbeing (Aora) is a mobile app designed to monitor and support the well-being of graduate students using the **Job Demands–Resources (JD-R) model** and AI-driven analysis.  
+GradWellbeing is a mobile app designed to monitor and support the well-being of graduate students using the **Job Demands–Resources (JD-R) model** and AI-driven analysis.  
 The app collects self-reports and digital interaction data to help students and their advisors track stress levels, resources, and overall well-being.
+
+GradWellbeing is a mobile application designed as a data-collection tool to study graduate student well-being.
+The app securely gathers self-reported JD-R questionnaire responses along with selected occupational digital interaction data (chat, email, calendar). These datasets power our [**JDR-LLM**](https://github.com/saferi1023/JDR-LLM) research, where we apply large-language-model analysis to simulate JD-R scores and investigate graduate student well-being patterns.
 
 ---
 
@@ -34,8 +37,6 @@ The app collects self-reports and digital interaction data to help students and 
 | Sign-Up (1) | Sign-Up (2) | Sync |
 |-------------|-------------|-----|
 | ![SignUp1](./assets/images/app_signup-page1.png) | ![SignUp2](./assets/images/app_signup-page2.png) | ![Sync](./assets/images/app_sync-page1.png) |
-
-> Add or update the image paths (`./assets/screenshots/...`) to match your repository structure.
 
 ---
 
