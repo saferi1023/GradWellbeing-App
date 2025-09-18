@@ -63,9 +63,9 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 | ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
 
 <div align="center">
-  <img src="./assets/images/app_sync-page1.png" style="width:30%; margin:5px"/>
-  <img src="./assets/images/app_sync-page-3.png" style="width:30%; margin:5px"/>
-  <img src="./assets/images/app_sync-page2.png" style="width:30%; margin:5px"/>
+  <img src="./assets/images/app_sync-page1.png" style="width:310; margin:5px"/>
+  <img src="./assets/images/app_sync-page-3.png" style="width:310; margin:5px"/>
+  <img src="./assets/images/app_sync-page2.png" style="width:310; margin:5px"/>
 </div>
 
 
