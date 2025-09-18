@@ -14,8 +14,7 @@ import { getFirestore, collection, addDoc, doc, setDoc } from "firebase/firestor
 // import { db, storage } from "./firebaseConfig"; // Make sure to import your Firebase config
 
 
-const clientId = '88ce521f-b064-42c6-bdd7-114669cdc298';
-// const tenantId = 'a36450eb-db06-42a7-8d1b-026719f701e3';
+const clientId = '"; //insert clientId 
 const scopes = ['User.Read', 'Chat.Read', 'Mail.Read', 'Calendars.Read'];
 
 const db = getFirestore();
@@ -56,8 +55,8 @@ const SyncTab = () => {
       });
 
       const discovery = {
-        authorizationEndpoint: "https://login.microsoftonline.com/a36450eb-db06-42a7-8d1b-026719f701e3/oauth2/v2.0/authorize",
-        tokenEndpoint: "https://login.microsoftonline.com/a36450eb-db06-42a7-8d1b-026719f701e3/oauth2/v2.0/token",
+        authorizationEndpoint: "",
+        tokenEndpoint: "",
       };
 
       const result = await authRequest.promptAsync(discovery, { useProxy: true });
