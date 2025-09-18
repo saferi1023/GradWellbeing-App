@@ -7,18 +7,22 @@ The app collects self-reports and digital interaction data to help students and 
 
 ---
 
-## ✨ Features
-- **Secure Sign-Up & Login**  
-  Email-based authentication with Firebase, including institutional email support.
+## ✨ Key Features
+- **Secure Authentication**  
+  Email-based sign-in and institutional login (Microsoft / Azure) for protected data access.
 
-- **Daily Tasks & Questionnaires**  
-  Automatic task scheduling and JD-R model–based questionnaires to assess perceived stress, peer support, supervision, infrastructure, and intellectual climate.
+- **JD-R Model Questionnaire**  
+  5-point Likert-scale questions to assess perceived stress, peer support, supervision, infrastructure, and intellectual climate.
 
-- **Data Upload & Sync**  
-  Upload daily schedules, video call transcripts, and sync email/chat/calendar data through Microsoft Graph.
+- **Daily Sync & Data Retrieval**  
+  Retrieve occupational digital data (chat messages, emails, and calendar schedules) directly using Microsoft Graph API.
 
-- **AI-Based Analysis**  
-  Backend scripts process collected data and simulate JD-R scores to monitor well-being over time.
+- **File Uploads**  
+  Upload schedule or transcript files with custom date selection for AI processing.
+
+- **AI-Based Insights**  
+  Collected data is processed by a Python/LLM pipeline to estimate weekly JD-R scores.
+
 
 ---
 
@@ -32,6 +36,41 @@ The app collects self-reports and digital interaction data to help students and 
 | ![SignUp1](./assets/images/app_signup-page1.png) | ![SignUp2](./assets/images/app_signup-page2.png) | ![Sync](./assets/images/app_sync-page1.png) |
 
 > Add or update the image paths (`./assets/screenshots/...`) to match your repository structure.
+
+---
+
+
+## 📱 Key App Tabs
+
+### 1️⃣ Questionnaire Tab
+Students can fill out and submit a **JD-R based questionnaire** consisting of **5 categories** (Perceived Stress, Peer Support, Supervision, Infrastructure, Intellectual Climate) with a **total of 26 Likert-scale questions**.  
+Upon completion, all responses are securely stored in **Firestore Cloud** for later analysis.
+
+![Questionnaire Tab](./assets/screenshots/app_questionnaire-page.png)
+
+---
+
+### 2️⃣ Sync Tab
+Through the **Sync** tab, students can:
+- Securely log in using their **institutional ID** via Microsoft authentication.
+- Retrieve and upload:
+  1. **Chat messages** with their advisor  
+  2. **Emails**  
+  3. **Calendar schedules**
+
+This process allows fine-grained, privacy-aware syncing of academic interaction data.
+
+| Login | Sync Main | Sync After Login |
+|------|-----------|------------------|
+| ![Sync Login](./assets/screenshots/app_sync-page-3.png) | ![Sync Tab](./assets/screenshots/app_sync-page1.png) | ![Sync After Login](./assets/screenshots/app_sync-page2.png) |
+
+---
+
+### 3️⃣ Upload Tab
+Students can also report **additional documents** (e.g., schedules or transcript files) through the **Upload** tab.  
+Users select the file type, assign a date, and upload the document, which is then securely stored in Firestore for research analysis.
+
+![Upload Tab](./assets/screenshots/app_upload-page.png)
 
 ---
 
