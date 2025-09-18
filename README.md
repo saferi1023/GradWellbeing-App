@@ -25,7 +25,7 @@ The app collects self-reports and digital interaction data to help students and 
 ## 📸 Screenshots
 | Welcome | Login | Questionnaire |
 |---------|------|----------------|
-| ![Welcome](./assets/images/app_welcome-page-2.png) | ![Login](./assets/images/app_login-page.png) | ![Questionnaire](./assets/images/app_questionnaire-page.png) |
+| ![Welcome](./assets/images/20250306-app_welcome-page.png) | ![Login](./assets/images/app_login-page.png) | ![Questionnaire](./assets/images/app_questionnaire-page.png) |
 
 | Sign-Up (1) | Sign-Up (2) | Sync |
 |-------------|-------------|-----|
