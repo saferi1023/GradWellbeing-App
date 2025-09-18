@@ -63,10 +63,26 @@ This process allows fine-grained, privacy-aware syncing of academic interaction 
 | ![Sync Tab](./assets/images/app_sync-page1.png) | ![Sync Login](./assets/images/app_sync-page-3.png) | ![Sync After Login](./assets/images/app_sync-page2.png) |
 
 <div align="center">
-  <img src="./assets/images/app_sync-page1.png" width="440" style="margin:5px"/>
-  <img src="./assets/images/app_sync-page-3.png" width="440" style="margin:5px"/><br/>
-  <img src="./assets/images/app_sync-page2.png" width="440" style="margin:5px"/>
+  <img src="./assets/images/app_sync-page1.png" width="460" style="margin:5px"/>
+  <img src="./assets/images/app_sync-page-3.png" width="460" style="margin:5px"/><br/>
+  <img src="./assets/images/app_sync-page2.png" width="460" style="margin:5px"/>
 </div>
+
+<div align="center" style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+  <figure>
+    <img src="./assets/images/app_sync-page1.png" width="250"/>
+    <figcaption><b>Sync Main</b></figcaption>
+  </figure>
+  <figure>
+    <img src="./assets/images/app_sync-page-3.png" width="250"/>
+    <figcaption><b>Login</b></figcaption>
+  </figure>
+  <figure>
+    <img src="./assets/images/app_sync-page2.png" width="250"/>
+    <figcaption><b>Sync After Login</b></figcaption>
+  </figure>
+</div>
+
 
 
 
